@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Venmathi G</title>
+
+    <style>
+        :root {
+            --bg: #eef2f7;
+            --card: #ffffff;
+            --text: #2c3e50;
+            --accent: #1a73e8;
+        }
+
+        body.dark {
+            --bg: #121212;
+            --card: #1e1e1e;
+            --text: #eaeaea;
+            --accent: #4dabf7;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 30px auto;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        .toggle {
+            text-align: right;
+        }
+
+        .toggle button {
+            background: var(--accent);
+            border: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            color: var(--accent);
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 5px 12px;
+            margin: 5px 5px 0 0;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        /* Print friendly */
+        @media print {
+            body {
+                background: white;
+            }
+            .toggle {
+                display: none;
+            }
+            .resume {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <div class="toggle">
+        <button onclick="toggleDark()">🌙 Toggle Dark Mode</button>
+    </div>
+
+    <div class="header">
+        <h1>Venmathi G</h1>
+        <p>📞 +91-8310631184 | 📧 venmathi.g29@gmail.com</p>
+        <p>Bangalore, India</p>
+        <p>LinkedIn: linkedin.com/in/venmathi-g | GitHub: github.com/VenmathiG-29</p>
+    </div>
+
+    <div class="section">
+        <h2>Profile</h2>
+        <p>
+            Aspiring Computer Science Engineer passionate about full stack web development,
+            AI, and emerging technologies. Focused on building scalable, user-friendly
+            applications and solving real-world problems.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">C++</span>
+        <span class="tag">SQL</span>
+        <span class="tag">React.js</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Git</span>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <p><strong>Blockchain-Based Healthcare Record System</strong></p>
+        <ul>
+            <li>Built a decentralized healthcare record system using Ethereum.</li>
+            <li>Integrated IPFS and MetaMask for secure data access.</li>
+        </ul>
+
+        <p><strong>Fruit Intelliripen Embedded System (Ongoing)</strong></p>
+        <ul>
+            <li>Detecting artificial ripening using image processing and sensors.</li>
+            <li>Using Python, OpenCV, Raspberry Pi, and Arduino.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <p><strong>Web Developer Intern – Unified Mentor Pvt. Ltd.</strong></p>
+        <ul>
+            <li>Developed responsive and mobile-first websites.</li>
+            <li>Improved performance and cross-browser compatibility.</li>
+        </ul>
+
+        <p><strong>Web Developer Intern – Elevate Labs</strong></p>
+        <ul>
+            <li>Built interactive UI components in an agile team.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p>
+            <strong>B.E. – Computer Science & Engineering</strong><br>
+            Vemana Institute of Technology (2022 – Present)<br>
+            CGPA: 8.7
+        </p>
+    </div>
+
+</div>
+
+<script>
+    function toggleDark() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
